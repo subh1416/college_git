@@ -1,16 +1,23 @@
+//Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('Build') {
+        stage('Build') { 
             steps {
-                // Your build steps here
-                echo 'Building the project...'
+                echo 'Starting the build Stage'
+                echo 'Build Stage completed successfully'
             }
         }
-        stage('Deploy') {
+        stage('Test') { 
             steps {
-                // Your deployment steps here
-                echo 'Deploying the project...'
+                echo 'Starting the Test Stage'
+                echo 'Test Stage completed successfully'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'Starting the Deploy Stage'
+                echo 'Deploy Stage completed successfully'
             }
         }
     }
